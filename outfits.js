@@ -12,7 +12,7 @@ page:"outfit.html?id=2"
 },
 
 {
-image:"outfit3.jpg",
+image:"outfit3-new.jpg",
 page:"outfit.html?id=3"
 }
 
@@ -101,3 +101,4 @@ document.getElementById("p"+(i+1)).href = outfitProducts[i].link
 
 
 }
+
