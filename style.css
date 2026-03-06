@@ -34,7 +34,7 @@ color:#333;
 
 height:500px;
 
-background-image:url("images/hero.jpg.webp");
+background-image:url("hero.jpg.webp");
 
 background-size:cover;
 background-position:center;
@@ -198,4 +198,5 @@ margin-top:8px;
 
 .product:hover p{
 background:#e88a00;
+
 }
