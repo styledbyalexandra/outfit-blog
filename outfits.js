@@ -2,17 +2,17 @@
 const outfits = [
 
 {
-image:"outfits/outfit1.jpg",
+image:"outfit1.jpg",
 page:"outfit.html?id=1"
 },
 
 {
-image:"outfits/outfit2.jpg",
+image:"outfit2.jpg",
 page:"outfit.html?id=2"
 },
 
 {
-image:"outfits/outfit3.jpg",
+image:"outfit3.jpg",
 page:"outfit.html?id=3"
 }
 
@@ -98,5 +98,6 @@ document.getElementById("img"+(i+1)).src = outfitProducts[i].img
 document.getElementById("p"+(i+1)).href = outfitProducts[i].link
 
 }
+
 
 }
