@@ -222,3 +222,27 @@ transform:scale(1.05);
 box-shadow:0 20px 40px rgba(0,0,0,0.15);
 }
 
+.outfit-card{
+position:relative;
+overflow:hidden;
+}
+
+.shop-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+background:rgba(0,0,0,0.6);
+color:white;
+padding:12px 20px;
+border-radius:8px;
+font-weight:bold;
+letter-spacing:1px;
+opacity:0;
+transition:opacity 0.3s;
+}
+
+.outfit-card:hover .shop-text{
+opacity:1;
+}
+
