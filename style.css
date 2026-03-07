@@ -236,17 +236,22 @@ overflow:hidden;
 
 .shop-text{
 position:absolute;
-top:50%;
+bottom:25px;
 left:50%;
-transform:translate(-50%, -50%);
-background:rgba(0,0,0,0.6);
+transform:translateX(-50%);
+background:rgba(0,0,0,0.75);
 color:white;
-padding:12px 20px;
-border-radius:8px;
-font-weight:bold;
+padding:14px 22px;
+border-radius:10px;
+font-weight:600;
 letter-spacing:1px;
-opacity:0;
-transition:opacity 0.3s;
+font-size:14px;
+transition:0.3s;
+}
+
+.outfit-card:hover{
+transform:scale(1.02);
+transition:0.3s;
 }
 
 .outfit-card:hover .shop-text{
