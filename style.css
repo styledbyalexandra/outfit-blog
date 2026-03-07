@@ -199,10 +199,14 @@ margin-top:8px;
 .product:hover p{
 background:#e88a00;
 }
+
 .pinterest-grid{
-column-count:2;
-column-gap:20px;
-padding:20px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+padding:40px;
+max-width:1200px;
+margin:auto;
 }
 
 .pinterest-grid img{
@@ -216,14 +220,4 @@ transition:transform 0.3s;
 .pinterest-grid img:hover{
 transform:scale(1.03);
 }
-.outfits{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:40px;
-padding:40px;
-}
 
-.outfits img{
-width:100%;
-border-radius:12px;
-}
