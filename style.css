@@ -241,3 +241,20 @@ transition:opacity 0.3s;
 opacity:1;
 }
 
+.big-shop-btn{
+display:inline-block;
+margin-top:20px;
+background:#ff9900;
+color:white;
+padding:16px 28px;
+border-radius:10px;
+font-weight:bold;
+font-size:18px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.big-shop-btn:hover{
+background:#e68a00;
+transform:scale(1.05);
+}
