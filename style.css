@@ -426,13 +426,13 @@ font-size:14px;
 SHOP OUTFITS GRID
 ========================= */
 
-.shop-outfits{
+.categories{
 max-width:1200px;
 margin:80px auto;
 text-align:center;
 }
 
-.shop-outfits h2{
+.categories h2{
 font-size:44px;
 margin-bottom:70px;
 letter-spacing:4px;
@@ -450,7 +450,9 @@ justify-items:center;
 
 .shop-card{
 
-width:300px;
+width:100px;
+
+max-width:300px;
 
 border:2px solid rgba(255,255,255,0.4);
 
