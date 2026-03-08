@@ -1,323 +1,66 @@
-body{
+/* =========================
+GLOBAL
+========================= */
+
+*{
+box-sizing:border-box;
 margin:0;
-font-family:Arial;
-background:#f6f6f6;
+padding:0;
 }
 
-/* NAVBAR */
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#f6f6f6;
+color:#222;
+}
+
+
+/* =========================
+NAVBAR
+========================= */
 
 .navbar{
+position:sticky;
+top:0;
+z-index:1000;
 
 display:flex;
 justify-content:space-between;
 align-items:center;
 
-padding:20px 60px;
+padding:18px 60px;
 
-background:white;
+background:rgba(255,255,255,0.9);
+backdrop-filter:blur(8px);
 
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
-
-}
-
-.navbar a{
-
-margin-left:20px;
-text-decoration:none;
-color:#333;
-
-}
-
-/* HERO */
-
-.hero{
-
-height:500px;
-
-background-image:url("hero.jpg");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-text-align:center;
-
-}
-
-.hero-text{
-
-color:white;
-
-background:rgba(0,0,0,0.35);
-
-padding:40px;
-
-border-radius:10px;
-
-}
-
-.hero h1{
-
-font-size:50px;
-margin-bottom:10px;
-
-}
-
-/* OUTFITS */
-
-.outfits{
-
-padding:60px;
-
-}
-
-.outfits h2{
-
-margin-bottom:40px;
-
-}
-
-/* GRID */
-
-#grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-gap:30px;
-
-}
-
-/* CARD */
-
-.card{
-
-background:white;
-
-border-radius:12px;
-
-overflow:hidden;
-
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-
-transition:0.3s;
-
-}
-
-.card img{
-
-width:100%;
-
-transition:0.4s;
-
-}
-
-.card:hover img{
-
-transform:scale(1.08);
-
-}
-
-.card:hover{
-
-transform:translateY(-6px);
-
-}
-
-
-.outfits-container{
-max-width:1100px;
-margin:auto;
-padding:50px 20px;
-display:flex;
-gap:60px;
-align-items:flex-start;
-}
-
-.outfit-left{
-flex:1;
-}
-
-.outfit-right{
-flex:1;
-}
-
-
-.main-outfit{
-width:420px;
-border-radius:12px;
-margin-bottom:40px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-}
-
-.shop-title{
-font-size:26px;
-margin-bottom:30px;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
-}
-
-.product{
-background:white;
-padding:15px;
-border-radius:12px;
-text-decoration:none;
-color:black;
-box-shadow:0 6px 20px rgba(0,0,0,0.08);
-transition:0.3s;
-}
-
-.product img{
-width:100%;
-height:160px;
-object-fit:contain;
-border-radius:8px;
-margin-bottom:10px;
-}
-
-.product:hover{
-transform:translateY(-6px);
-box-shadow:0 12px 30px rgba(0,0,0,0.15);
-}
-
-.product p{
-font-weight:600;
-font-size:14px;
-}
-
-
-.product p{
-background:#ff9900;
-color:white;
-padding:8px;
-border-radius:6px;
-font-weight:bold;
-margin-top:8px;
-}
-
-.product:hover p{
-background:#e88a00;
-}
-
-.pinterest-grid{
-column-count:3;
-column-gap:30px;
-padding:40px;
-max-width:1200px;
-margin:auto;
-}
-
-.pinterest-grid img{
-width:100%;
-height:auto;
-margin-bottom:30px;
-border-radius:12px;
-cursor:pointer;
-transition:transform 0.3s, box-shadow 0.3s;
-}
-
-.pinterest-grid img:hover{
-transform:scale(1.05);
-box-shadow:0 20px 40px rgba(0,0,0,0.15);
-}
-
-.outfit-card{
-position:relative;
-overflow:hidden;
-}
-
-.shop-text{
-position:absolute;
-bottom:25px;
-left:50%;
-transform:translateX(-50%);
-background:rgba(0,0,0,0.75);
-color:white;
-padding:14px 22px;
-border-radius:10px;
-font-weight:600;
-letter-spacing:1px;
-font-size:14px;
-transition:0.3s;
-}
-
-.outfit-card:hover{
-transform:scale(1.02);
-transition:0.3s;
-}
-
-.outfit-card:hover .shop-text{
-opacity:1;
-}
-
-.big-shop-btn{
-display:inline-block;
-margin-top:20px;
-padding:14px 28px;
-background:#f59e0b;
-color:white;
-font-weight:600;
-border-radius:10px;
-text-decoration:none;
-}
-
-.outfit-left{
-text-align:center;
-}
-
-.big-shop-btn:hover{
-background:#e68a00;
-transform:scale(1.05);
-}
-
-@media (max-width:768px){
-
-.outfits-container{
-flex-direction:column;
-}
-
-.outfit-right{
-margin-top:30px;
-}
-
-.products{
-grid-template-columns:repeat(2,1fr);
-}
-
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
 }
 
 .logo{
 font-size:22px;
 font-weight:700;
-color:#222;
 text-decoration:none;
+color:#111;
 }
 
 .nav-link{
+margin-left:25px;
 text-decoration:none;
+font-weight:600;
+font-size:17px;
 color:#333;
-font-size:18px;
-font-weight:700;
-margin-left:20px;
 position:relative;
+transition:0.3s;
 }
 
 .nav-link::after{
 content:"";
 position:absolute;
+left:0;
+bottom:-5px;
 width:0;
 height:2px;
 background:#c58a2a;
-left:0;
-bottom:-4px;
 transition:0.3s;
 }
 
@@ -325,23 +68,257 @@ transition:0.3s;
 width:100%;
 }
 
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+height:80vh;
+
+background-image:url("hero.jpg");
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-text{
+
+background:rgba(0,0,0,0.45);
+color:white;
+
+padding:50px 60px;
+border-radius:12px;
+
+backdrop-filter:blur(4px);
+}
+
+.hero h1{
+font-size:56px;
+margin-bottom:15px;
+letter-spacing:1px;
+}
+
+.hero p{
+font-size:18px;
+opacity:0.9;
+}
+
+
+/* =========================
+OUTFITS SECTION
+========================= */
+
+.outfits{
+padding:80px 20px;
+}
+
+.outfits h2{
+text-align:center;
+font-size:32px;
+margin-bottom:60px;
+}
+
+.outfits-container{
+
+max-width:1200px;
+margin:auto;
+
+display:flex;
+gap:60px;
+align-items:flex-start;
+}
+
+.outfit-left{
+flex:1;
+text-align:center;
+}
+
+.main-outfit{
+width:100%;
+max-width:420px;
+
+border-radius:14px;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.12);
+margin-bottom:35px;
+}
+
+
+/* =========================
+SHOP BUTTON
+========================= */
+
+.big-shop-btn{
+display:inline-block;
+
+padding:14px 30px;
+border-radius:10px;
+
+background:#f59e0b;
+color:white;
+
+font-weight:600;
+text-decoration:none;
+
+transition:all 0.3s ease;
+}
+
+.big-shop-btn:hover{
+background:#e68900;
+transform:scale(1.06);
+}
+
+
+/* =========================
+PRODUCT GRID
+========================= */
+
+.outfit-right{
+flex:1;
+}
+
+.shop-title{
+font-size:24px;
+margin-bottom:25px;
+}
+
+.products{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.product{
+
+background:white;
+
+padding:15px;
+
+border-radius:12px;
+
+text-decoration:none;
+color:#111;
+
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+transition:all 0.3s ease;
+}
+
+.product img{
+
+width:100%;
+height:160px;
+
+object-fit:contain;
+
+border-radius:8px;
+margin-bottom:10px;
+}
+
+.product p{
+
+font-size:14px;
+font-weight:600;
+
+background:#ff9900;
+color:white;
+
+padding:8px;
+border-radius:6px;
+margin-top:8px;
+
+text-align:center;
+}
+
+.product:hover{
+
+transform:translateY(-8px) scale(1.02);
+
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.product:hover p{
+background:#e68900;
+}
+
+
+/* =========================
+PINTEREST GRID
+========================= */
+
+.pinterest-grid{
+
+column-count:3;
+column-gap:30px;
+
+max-width:1300px;
+margin:auto;
+
+padding:40px 20px;
+}
+
+.pinterest-grid img{
+
+width:100%;
+margin-bottom:30px;
+
+border-radius:14px;
+
+cursor:pointer;
+
+transition:all 0.35s ease;
+}
+
+.pinterest-grid img:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 25px 50px rgba(0,0,0,0.18);
+}
+
+
+/* =========================
+OUTFIT CARD
+========================= */
+
 .outfit-card{
+
 position:relative;
 overflow:hidden;
 }
 
+.outfit-card img{
+width:100%;
+border-radius:14px;
+}
+
 .outfit-card::after{
+
 content:"SHOP THIS OUTFIT";
+
 position:absolute;
-bottom:15px;
+bottom:18px;
 left:50%;
+
 transform:translateX(-50%);
+
 background:rgba(0,0,0,0.8);
 color:white;
+
 padding:10px 18px;
 border-radius:10px;
+
 font-size:14px;
+letter-spacing:1px;
+
 opacity:0;
+
 transition:0.3s;
 }
 
@@ -349,22 +326,63 @@ transition:0.3s;
 opacity:1;
 }
 
-@media (max-width: 768px){
+.outfit-card:hover{
+transform:scale(1.03);
+}
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width:1000px){
+
+.outfits-container{
+flex-direction:column;
+align-items:center;
+}
+
+.outfit-right{
+width:100%;
+}
+
+.products{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media (max-width:768px){
+
+.navbar{
+padding:15px 25px;
+}
+
+.hero{
+height:70vh;
+}
+
+.hero h1{
+font-size:36px;
+line-height:1.2;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.products{
+grid-template-columns:1fr;
+}
 
 .pinterest-grid{
-grid-template-columns: 1fr;
-gap:20px;
+column-count:1;
 padding:20px;
 }
 
-.outfit-card img{
-width:100%;
-border-radius:12px;
-}
-
 .outfits h2{
-font-size:22px;
-padding-left:20px;
+font-size:24px;
 }
 
 }
