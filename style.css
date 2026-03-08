@@ -348,3 +348,23 @@ transition:0.3s;
 .outfit-card:hover::after{
 opacity:1;
 }
+
+@media (max-width: 768px){
+
+.pinterest-grid{
+grid-template-columns: 1fr;
+gap:20px;
+padding:20px;
+}
+
+.outfit-card img{
+width:100%;
+border-radius:12px;
+}
+
+.outfits h2{
+font-size:22px;
+padding-left:20px;
+}
+
+}
