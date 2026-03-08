@@ -330,22 +330,35 @@ opacity:1;
 transform:scale(1.03);
 }
 
+/* =================================
+RESPONSIVE DESIGN
+controlează cum arată site-ul
+pe ecrane mai mici
+================================ */
 
-/* =========================
-RESPONSIVE
-========================= */
+
+/* =================================
+TABLET + LAPTOP MIC
+sub 1000px
+================================ */
 
 @media (max-width:1000px){
 
+/* pagina de outfit devine verticală
+imagine sus + produse jos */
 .outfits-container{
 flex-direction:column;
 align-items:center;
 }
 
+/* partea dreaptă (produsele)
+ocupă toată lățimea */
 .outfit-right{
 width:100%;
 }
 
+/* produsele Amazon devin
+2 produse pe rând */
 .products{
 grid-template-columns:repeat(2,1fr);
 }
@@ -353,81 +366,119 @@ grid-template-columns:repeat(2,1fr);
 }
 
 
+/* =================================
+TELEFON
+sub 768px
+================================ */
+
 @media (max-width:768px){
 
+/* navbar mai compact
+ca să nu ocupe mult spațiu */
 .navbar{
-padding:15px 25px;
+padding:15px 20px;
 }
 
-.hero{
-height:45px;
+
+/* HERO IMAGE
+imaginea mare de cover */
+
+.hero-img{
+height:45vh;
+object-fit:cover;
 }
+
+
+/* titlul mare din cover */
 
 .hero h1{
 font-size:36px;
 line-height:1.2;
 }
 
+
+/* textul mic din cover */
+
 .hero p{
 font-size:16px;
 }
 
+
+/* produsele Amazon
+1 pe rând pe telefon */
+
 .products{
 grid-template-columns:1fr;
 }
+
+
+/* pinterest style grid
+pentru postările de outfit */
 
 .pinterest-grid{
 column-count:1;
 padding:20px;
 }
 
+
+/* titlul secțiunii outfit */
+
 .outfits h2{
 font-size:24px;
 }
 
-}
- 
-@media (max-width:768px){
 
-.navbar{
-padding:15px 20px;
-}
-
-.home-btn{
-font-size:16px;
-padding:8px 18px;
-}
-
-}
+/* spațiere secțiune categorii */
 
 .categories{
-padding:80px 10%;
-text-align:center;
+padding:60px 8%;
 }
 
-.categories h2{
-letter-spacing:1px;
-margin-bottom:40px;
-text-decoration: none;
-color:white;
-font-weight: 500;
-}
+
+/* grid categorii
+devine 2 categorii pe rând */
 
 .category-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
 }
 
-.category img{
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:6px;
 }
 
-.category span{
-display:block;
-margin-top:10px;
-letter-spacing:2px;
+
+/* =================================
+TELEFON MIC
+sub 480px
+================================ */
+
+@media (max-width:480px){
+
+/* cover imagine puțin mai mic */
+
+.hero-img{
+height:38vh;
+}
+
+
+/* titlu hero mai mic */
+
+.hero h1{
+font-size:28px;
+}
+
+
+/* text hero */
+
+.hero p{
+font-size:14px;
+}
+
+
+/* categorii devin
+1 pe rând */
+
+.category-grid{
+grid-template-columns:1fr;
+}
+
 }
