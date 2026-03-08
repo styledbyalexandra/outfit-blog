@@ -9,9 +9,16 @@ padding:0;
 }
 
 body{
-font-family:Arial;
+font-family:Arial, sans-serif;
 background:black;
 color:white;
+}
+
+/* scoate culoarea albastră a linkurilor */
+
+a{
+text-decoration:none;
+color:inherit;
 }
 
 
@@ -30,7 +37,7 @@ align-items:center;
 
 padding:18px 60px;
 
-background:rgba(255,255,255,0.9);
+background:rgba(255,255,255,0.95);
 backdrop-filter:blur(8px);
 
 box-shadow:0 4px 15px rgba(0,0,0,0.05);
@@ -39,18 +46,12 @@ box-shadow:0 4px 15px rgba(0,0,0,0.05);
 .logo{
 font-size:22px;
 font-weight:700;
-text-decoration:none;
-color:white;
-font-family: "Playfair Display", serif;
-}
-
-.home-logo{
-color: black;
+color:black;
+font-family:"Playfair Display", serif;
 }
 
 .nav-link{
 margin-left:25px;
-text-decoration:none;
 font-weight:600;
 font-size:17px;
 color:#333;
@@ -78,14 +79,14 @@ width:100%;
 HERO
 ========================= */
 
-
 .hero{
 position:relative;
+margin-bottom:80px;
 }
 
 .hero-img{
 width:100%;
-height:75vh;
+height:80vh;
 object-fit:cover;
 object-position:center;
 }
@@ -102,12 +103,14 @@ text-align:center;
 font-size:60px;
 font-family:"Playfair Display", serif;
 letter-spacing:3px;
+color:white;
 }
 
 .hero-text p{
 font-size:16px;
 letter-spacing:4px;
 margin-top:10px;
+color:white;
 }
 
 
@@ -116,13 +119,14 @@ OUTFITS SECTION
 ========================= */
 
 .outfits{
-padding:80px 20px;
+padding:100px 20px;
 }
 
 .outfits h2{
 text-align:center;
 font-size:32px;
 margin-bottom:60px;
+color:white;
 }
 
 .outfits-container{
@@ -146,7 +150,7 @@ max-width:420px;
 
 border-radius:14px;
 
-box-shadow:0 15px 40px rgba(0,0,0,0.12);
+box-shadow:0 15px 40px rgba(0,0,0,0.25);
 margin-bottom:35px;
 }
 
@@ -161,16 +165,16 @@ display:inline-block;
 padding:14px 30px;
 border-radius:10px;
 
-background:black;
-color:white;
+background:white;
+color:black;
 
 font-weight:600;
-text-decoration:none;
+
 transition:all 0.3s ease;
 }
 
 .big-shop-btn:hover{
-background:#222;
+background:#ddd;
 transform:scale(1.06);
 }
 
@@ -186,6 +190,7 @@ flex:1;
 .shop-title{
 font-size:24px;
 margin-bottom:25px;
+color:white;
 }
 
 .products{
@@ -203,7 +208,6 @@ padding:15px;
 
 border-radius:12px;
 
-text-decoration:none;
 color:#111;
 
 box-shadow:0 8px 25px rgba(0,0,0,0.08);
@@ -242,10 +246,6 @@ text-align:center;
 transform:translateY(-8px) scale(1.02);
 
 box-shadow:0 20px 40px rgba(0,0,0,0.15);
-}
-
-.product:hover p{
-background:black;
 }
 
 
@@ -292,11 +292,13 @@ OUTFIT CARD
 
 position:relative;
 overflow:hidden;
+
+border-radius:14px;
 }
 
 .outfit-card img{
 width:100%;
-border-radius:14px;
+display:block;
 }
 
 .outfit-card::after{
@@ -309,7 +311,7 @@ left:50%;
 
 transform:translateX(-50%);
 
-background:rgba(0,0,0,0.8);
+background:rgba(0,0,0,0.85);
 color:white;
 
 padding:10px 18px;
@@ -331,35 +333,22 @@ opacity:1;
 transform:scale(1.03);
 }
 
-/* =================================
-RESPONSIVE DESIGN
-controlează cum arată site-ul
-pe ecrane mai mici
-================================ */
 
-
-/* =================================
-TABLET + LAPTOP MIC
-sub 1000px
-================================ */
+/* =========================
+RESPONSIVE
+========================= */
 
 @media (max-width:1000px){
 
-/* pagina de outfit devine verticală
-imagine sus + produse jos */
 .outfits-container{
 flex-direction:column;
 align-items:center;
 }
 
-/* partea dreaptă (produsele)
-ocupă toată lățimea */
 .outfit-right{
 width:100%;
 }
 
-/* produsele Amazon devin
-2 produse pe rând */
 .products{
 grid-template-columns:repeat(2,1fr);
 }
@@ -367,119 +356,52 @@ grid-template-columns:repeat(2,1fr);
 }
 
 
-/* =================================
-TELEFON
-sub 768px
-================================ */
-
 @media (max-width:768px){
 
-/* navbar mai compact
-ca să nu ocupe mult spațiu */
 .navbar{
 padding:15px 20px;
 }
 
-
-/* HERO IMAGE
-imaginea mare de cover */
-
 .hero-img{
 height:45vh;
-object-fit:cover;
 }
-
-
-/* titlul mare din cover */
 
 .hero h1{
 font-size:36px;
-line-height:1.2;
 }
-
-
-/* textul mic din cover */
 
 .hero p{
 font-size:16px;
 }
 
-
-/* produsele Amazon
-1 pe rând pe telefon */
-
 .products{
 grid-template-columns:1fr;
 }
-
-
-/* pinterest style grid
-pentru postările de outfit */
 
 .pinterest-grid{
 column-count:1;
 padding:20px;
 }
 
-
-/* titlul secțiunii outfit */
-
 .outfits h2{
 font-size:24px;
 }
 
-
-/* spațiere secțiune categorii */
-
-.categories{
-padding:60px 8%;
 }
 
-
-/* grid categorii
-devine 2 categorii pe rând */
-
-.category-grid{
-grid-template-columns:repeat(2,1fr);
-gap:15px;
-}
-
-}
-
-
-/* =================================
-TELEFON MIC
-sub 480px
-================================ */
 
 @media (max-width:480px){
-
-/* cover imagine puțin mai mic */
 
 .hero-img{
 height:38vh;
 }
 
-
-/* titlu hero mai mic */
-
 .hero h1{
 font-size:28px;
 }
 
-
-/* text hero */
-
 .hero p{
 font-size:14px;
-}
-
-
-/* categorii devin
-1 pe rând */
-
-.category-grid{
-grid-template-columns:1fr;
 }
 
 }
