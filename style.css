@@ -165,7 +165,6 @@ color:white;
 
 font-weight:600;
 text-decoration:none;
-
 transition:all 0.3s ease;
 }
 
@@ -227,7 +226,7 @@ margin-bottom:10px;
 font-size:14px;
 font-weight:600;
 
-background:#ff9900;
+background:black;
 color:white;
 
 padding:8px;
