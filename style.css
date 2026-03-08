@@ -405,3 +405,68 @@ font-size:14px;
 }
 
 }
+
+/* =========================
+SHOP OUTFITS GRID
+========================= */
+
+.shop-outfits{
+max-width:1200px;
+margin:80px auto;
+text-align:center;
+}
+
+.shop-outfits h2{
+font-size:32px;
+margin-bottom:40px;
+letter-spacing:2px;
+}
+
+.shop-grid{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:40px;
+
+justify-items:center;
+}
+
+.shop-card{
+
+width:230px;
+
+border:2px solid rgba(255,255,255,0.4);
+
+border-radius:10px;
+
+overflow:hidden;
+
+transition:0.3s;
+}
+
+.shop-card img{
+
+width:100%;
+height:200px;
+
+object-fit:cover;
+}
+
+.shop-card p{
+
+margin-top:12px;
+
+font-size:18px;
+font-weight:600;
+
+color:white;
+
+text-decoration:none;
+}
+
+.shop-card:hover{
+
+transform:translateY(-6px);
+
+border-color:white;
+}
