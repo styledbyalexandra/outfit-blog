@@ -396,13 +396,12 @@ gap:12px;
 
 .shop-card{
 width:100%;
-max-width:220px;
 margin:auto;
 }
 
 .shop-card img{
 height:100%;
-height: auto;
+height:auto;
 }
 
 }
@@ -453,7 +452,7 @@ justify-items:center;
 
 .shop-card{
 
-width:100px;
+width:100%;
 
 max-width:300px;
 
