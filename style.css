@@ -363,7 +363,7 @@ padding:15px 20px;
 }
 
 .hero-img{
-height:45vh;
+height:55vh;
 }
 
 .hero h1{
@@ -388,6 +388,20 @@ font-size:24px;
 }
 
 }
+.shop-grid{
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.shop-card{
+width:100%;
+}
+
+.shop-card img{
+height:200px;
+}
+
+
 
 
 @media (max-width:480px){
