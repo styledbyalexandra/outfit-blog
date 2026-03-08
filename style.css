@@ -431,23 +431,24 @@ text-align:center;
 }
 
 .shop-outfits h2{
-font-size:32px;
-margin-bottom:40px;
-letter-spacing:2px;
+font-size:44px;
+margin-bottom:70px;
+letter-spacing:4px;
+text-align: center;
 }
 
 .shop-grid{
 
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:40px;
+gap:60px;
 
 justify-items:center;
 }
 
 .shop-card{
 
-width:280px;
+width:300px;
 
 border:2px solid rgba(255,255,255,0.4);
 
@@ -465,17 +466,18 @@ height:240px;
 object-fit: contain;
 background: #111;
 }
+/*====== Tilurile de pe carduri ========== */
 
 .shop-card p{
 
-margin-top:12px;
+margin-top:14px;
 
-font-size:18px;
+font-size:20px;
 font-weight:600;
 
 color:white;
 
-text-decoration:none;
+text-align: center;
 }
 
 .shop-card:hover{
