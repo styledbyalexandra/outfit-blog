@@ -85,10 +85,10 @@ margin-bottom:80px;
 }
 
 .hero-img{
-width:100%;
+width:95%;
 height:55vh;
 object-fit:cover;
-object-position:center 60%;
+object-position:center 50%;
 }
 
 .hero-text{
@@ -411,8 +411,8 @@ overflow:hidden;
 }
 
 .shop-card img{
-width:90%;
-height:90%;
+width:80%;
+height:80%;
 object-fit:cover;
 
 }
