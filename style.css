@@ -538,7 +538,7 @@ margin:auto;
 
 /*=== TITLU SI DESCRIERE OUTFITURI ==*/
 
-h1{
+.outfit-title{
 font-family:'Playfair Display', serif;
 text-align:center;
 font-size:38px;
@@ -548,7 +548,7 @@ margin-bottom:60px;
 font-weight:500;
 }
 
-h1::after{
+.outfit-title::after{
 content:"";
 display:block;
 width:60px;
