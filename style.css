@@ -143,8 +143,8 @@ color:white;
 opacity: 0.9;
 }
 
-.hero-text{
-text-shadow: 0 4px 25px rgba(0,0,0,0.06);
+.hero-text h1{
+text-shadow: 0 6px 40px rgba(0,0,0,0.08);
 }
 
 
@@ -495,8 +495,17 @@ height:55vh;
 font-size:36px;
 }
 
+.hero-text h1:first-child{
+font-size:22px;
+}
+
+.hero-text h1:last-child{
+font-size:36px;
+}
+
 .hero p{
-font-size:16px;
+font-size:14px;
+letter-spacing:3px;
 }
 
 .products{
