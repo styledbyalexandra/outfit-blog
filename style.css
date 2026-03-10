@@ -534,7 +534,13 @@ overflow:hidden;
 width:100%;
 height:auto;
 object-fit:cover;
+}
 
+.categories h2{
+font-size:22px;
+letter-spacing:4px;
+padding:10px 20px;
+border-radius:10px;
 }
 
 }
