@@ -333,6 +333,78 @@ opacity:1;
 transform:scale(1.03);
 }
 
+/* =========================
+SHOP OUTFITS GRID
+========================= */
+
+.categories{
+max-width:1200px;
+margin:80px auto;
+text-align:center;
+}
+
+.categories h2{
+font-size:44px;
+margin-bottom:70px;
+letter-spacing:4px;
+text-align: center;
+}
+
+.shop-grid{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:24px;
+
+}
+
+.shop-card{
+
+width:100%;
+
+max-width:none;
+
+border:2px solid rgba(255,255,255,0.4);
+
+border-radius:16px;
+
+overflow:hidden;
+
+transition:0.3s;
+
+position: relative;
+
+}
+
+.shop-card img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+}
+/*====== Tilurile de pe carduri ========== */
+
+.shop-card p{
+
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+font-size:18px;
+font-weight:600;
+color:white;
+background:rgba(0,0,0,0.5);
+padding:8px 0;
+text-align:center;
+}
+
+
+.shop-card:hover{
+
+transform:scale(1.05);
+
+border-color:white;
+}
 
 /* =========================
 RESPONSIVE DESKTOP MARE/LAPTOP
@@ -434,79 +506,6 @@ font-size:28px;
 font-size:14px;
 }
 
-}
-
-/* =========================
-SHOP OUTFITS GRID
-========================= */
-
-.categories{
-max-width:1200px;
-margin:80px auto;
-text-align:center;
-}
-
-.categories h2{
-font-size:44px;
-margin-bottom:70px;
-letter-spacing:4px;
-text-align: center;
-}
-
-.shop-grid{
-
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:24px;
-
-}
-
-.shop-card{
-
-width:100%;
-
-max-width:none;
-
-border:2px solid rgba(255,255,255,0.4);
-
-border-radius:16px;
-
-overflow:hidden;
-
-transition:0.3s;
-
-position: relative;
-
-}
-
-.shop-card img{
-
-width:100%;
-height:100%;
-object-fit:cover;
-}
-/*====== Tilurile de pe carduri ========== */
-
-.shop-card p{
-
-position:absolute;
-bottom:0;
-left:0;
-width:100%;
-font-size:18px;
-font-weight:600;
-color:white;
-background:rgba(0,0,0,0.5);
-padding:8px 0;
-text-align:center;
-}
-
-
-.shop-card:hover{
-
-transform:scale(1.05);
-
-border-color:white;
 }
 
 /*====ABOUT SECTION ====*/
