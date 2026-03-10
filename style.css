@@ -353,8 +353,8 @@ text-align: center;
 .shop-grid{
 
 display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:24px;
+grid-template-columns:repeat(auto-fit, minmax (180px,1fr));
+gap:20px;
 
 }
 
@@ -377,9 +377,8 @@ position: relative;
 }
 
 .shop-card img{
-
 width:100%;
-height:100%;
+aspect-ratio:3/4;
 object-fit:cover;
 }
 /*====== Tilurile de pe carduri ========== */
