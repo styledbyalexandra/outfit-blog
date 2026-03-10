@@ -436,7 +436,7 @@ grid-template-columns:repeat(2,1fr);
 
 /*====== CUM SE VEDE PE TELEFON ====== */
 
-@media (max-width:768px){
+@media (max-width:900px){
 
 .navbar{
 padding:15px 20px;
