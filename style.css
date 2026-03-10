@@ -417,11 +417,14 @@ transition:0.3s;
 
 position: relative;
 
+height:320px;
+
 }
+
 
 .shop-card img{
 width:100%;
-aspect-ratio:3/4;
+height:100%;
 object-fit:cover;
 }
 /*====== Tilurile de pe carduri ========== */
