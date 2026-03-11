@@ -554,7 +554,7 @@ text-align:center;
   position:relative;
   width:100%;
   max-width:320px;
-  margin:0 auto 40px;
+  margin:40px auto 40px;
 }
 
 .img-main{
@@ -583,6 +583,8 @@ text-align:center;
 
 .about-container{
 flex-direction:column;
+text-align:center;
+gap:40px;
 }
 
 .about-text{
