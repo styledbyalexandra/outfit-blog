@@ -699,19 +699,19 @@ font-size:13px;
 color:#999;
 }
 
-
 /*==IMAGINILE DE JOS==*/
 
 .about-container{
 display:flex;
 align-items:center;
-gap:80px;
+gap:40x;
 margin-top:40px;
 }
 
 .about-images{
 position:relative;
-width:450px;
+width:100%;
+max-width:450px;
 }
 
 .img-main{
