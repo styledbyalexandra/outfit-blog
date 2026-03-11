@@ -661,3 +661,25 @@ margin-bottom:20px;
 font-size:13px;
 color:#999;
 }
+
+/*===Steluta==*/
+
+.icon-divider{
+text-align:center;
+font-size:22px;
+color:#aaa;
+margin:50px 0;
+}
+
+/*==IMAGINEA DE JOS==*/
+
+.about-image{
+max-width:800px;
+margin:60px auto;
+}
+
+.about-image img{
+width:100%;
+display:block;
+border-radius:4px;
+}
