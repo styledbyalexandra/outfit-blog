@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<titleElegant Red Date Night Outfit></title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+<a href="index.html" class="logo">
+Style By Alexandra/ Home
+</a>
+
+
+</header>
+
+<!--TITLU-->
+
+<h1 class="outfit-title">Elegant Red Date Night Outfit</h1>
+
+<div class="outfits-container">
+
+<div class="outfit-left">
+<img src="outfits/outfit13.jpg" class="main-outfit">
+
+<!--DESCRIERE-->
+
+<p class="outfit-description">
+A stunning red elegant outfit perfect for romantic evenings and special occasions. 
+</p>
+
+</div>
+
+<div class="outfit-right">
+
+<div class="products">
+
+<!--PRODUSE-->
+
+<a class="product" href="https://amzn.to/4bhJSU2" target="_blank">
+<img src="products/dress3.jpg" style="width:100%;">
+<p>View on Amazon</p>
+</a>
+
+<a class="product" href="https://amzn.to/4cH5LP9" target="_blank">
+<img src="products/bag9.jpg" style="width:100%;">
+<p>View on Amazon</p>
+</a>
+
+<a class="product" href="https://amzn.to/40r86Xb" target="_blank">
+<img src="products/stiletto1.jpg" style="width:100%;">
+<p>View on Amazon</p>
+</a>
+
+<a class="product" href="https://amzn.to/40WUHWZ" target="_blank">
+<img src="products/watches.jpg" style="width:100%;">
+<p>View on Amazon</p>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
