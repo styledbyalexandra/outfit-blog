@@ -543,34 +543,43 @@ padding:10px 20px;
 border-radius:10px;
 }
 
-
 .about-container{
 flex-direction:column;
 text-align:center;
 }
 
-.about-images{
-position:relative;
-width:100%;
-margin-bottom:30px;
-display:flex;
-flex-direction:column;
-align-items:center;
-}
+/*===IMAGINILE DE JOS===*/
 
-.img-left,
-.img-right{
-position:relative;
-width:80%;
-margin:10px auto;
-display:block;
+.about-images{
+  position:relative;
+  width:100%;
+  max-width:320px;
+  margin:0 auto 40px;
 }
 
 .img-main{
-width:90%;
-margin:auto;
+  width:85%;
+  display:block;
+  margin:auto;
+  position:relative;
+  z-index:2;
 }
 
+.img-left{
+  position:absolute;
+  width:45%;
+  bottom:-10px;
+  left:-5px;
+  z-index:3;
+}
+
+.img-right{
+  position:absolute;
+  width:45%;
+  top:-10px;
+  right:-5px;
+  z-index:3;
+}
 }
 
 /*TELEFON FOARTE MIC */
