@@ -580,6 +580,17 @@ text-align:center;
   right:-5px;
   z-index:3;
 }
+
+.about-container{
+flex-direction:column;
+}
+
+.about-text{
+order:1;
+}
+.about-images{
+order:2;
+}
 }
 
 /*TELEFON FOARTE MIC */
