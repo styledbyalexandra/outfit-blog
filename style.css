@@ -554,7 +554,7 @@ text-align:center;
   position:relative;
   width:100%;
   max-width:320px;
-  margin:100px auto 80px;
+  margin:0 auto;
 }
 
 .img-main{
@@ -582,9 +582,10 @@ text-align:center;
 }
 
 .about-container{
+display:flex;
 flex-direction:column;
 text-align:center;
-gap:40px;
+gap:30px;
 }
 
 .about-text{
