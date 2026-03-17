@@ -548,6 +548,13 @@ flex-direction:column;
 text-align:center;
 }
 
+.shop-overlay {
+opacity: 1 !important;
+transform: translateY(0) !important;
+background: rgba(0,0,0,0.6);
+}
+}
+
 /*===IMAGINILE DE JOS===*/
 
 .about-images{
@@ -594,7 +601,7 @@ order:1;
 .about-images{
 order:2;
 }
-}
+
 
 /*TELEFON FOARTE MIC */
 
@@ -750,7 +757,7 @@ margin-bottom:40px;
 }
 
 
-/*===DESIGN PAGINA OUTFIT PREMIUM===*/
+/*===DESIGN PAGINA OUTFIT PREMIUM===
 
 .outfit-page-premium {
   padding: 30px 20px 70px;
@@ -844,3 +851,4 @@ margin-bottom:40px;
     height: 120px;
   }
 }
+  ====*/
