@@ -547,11 +547,14 @@ border-radius:10px;
 flex-direction:column;
 text-align:center;
 }
+.outfit-card {
+  position: relative;
+  overflow: hidden;
+}
 
 .outfit-card::after {
-opacity: 1 !important;
-transform: translateY(0) !important;
-background: rgba(0,0,0,0.6);
+  opacity: 1 !important;
+  transform: translateX(-50%) !important;
 }
 }
 
