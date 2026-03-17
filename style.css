@@ -548,7 +548,7 @@ flex-direction:column;
 text-align:center;
 }
 
-.shop-overlay {
+.outfit-card::after {
 opacity: 1 !important;
 transform: translateY(0) !important;
 background: rgba(0,0,0,0.6);
