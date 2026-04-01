@@ -704,6 +704,16 @@ color:#d6d6d6;
   margin-bottom: 10px;
 }
 
+.hero-description {
+  max-width: 600px;
+  margin: 20px auto 40px;
+  text-align: center;
+  font-size: 15px;
+  color: #bfbfbf;
+  line-height: 1.7;
+  font-family: 'Playfair Display', serif;
+}
+
 /*==FOOTER DE JOS==*/
 
 .footer{
