@@ -675,6 +675,15 @@ line-height:1.7;
 color:#d6d6d6;
 }
 
+.category-description {
+  max-width: 600px;
+  margin: 10px auto 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
 /*==FOOTER DE JOS==*/
 
 .footer{
