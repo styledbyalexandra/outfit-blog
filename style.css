@@ -677,12 +677,31 @@ color:#d6d6d6;
 
 .category-description {
   max-width: 650px;
-  margin: 25px auto 60px;
+  margin: 35px auto 70px;
   text-align: center;
   font-size: 15px;
-  color: #aaa;
+  color: #bfbfbf;
   line-height: 1.8;
   font-family: 'Playfair Display', serif;
+}
+
+.seo-text {
+  max-width: 800px;
+  margin: 80px auto 60px;
+  text-align: center;
+  color: #aaa;
+}
+
+.seo-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.seo-text p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 10px;
 }
 
 /*==FOOTER DE JOS==*/
