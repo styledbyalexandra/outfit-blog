@@ -562,7 +562,22 @@ text-align:center;
   opacity: 1 !important;
   transform: translateX(-50%) !important;
 }
+
+.outfit-left{
+display:flex;
+flex-direction:column;
 }
+
+.outfit-description{
+order:3;
+margin-top:25px;
+}
+
+.outfit-right{
+order:2;
+}
+}
+
 
 /*===IMAGINILE DE JOS===*/
 
@@ -610,6 +625,8 @@ order:1;
 .about-images{
 order:2;
 }
+
+
 
 
 /*TELEFON FOARTE MIC */
