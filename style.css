@@ -230,8 +230,8 @@ color:white;
 .products{
 
 display:grid;
-grid-template-columns:repeat(2,1fr);
-gap: 12px;
+grid-template-columns:repeat 1fr;
+gap:20px;
 }
 
 .product{
@@ -509,7 +509,8 @@ letter-spacing:3px;
 }
 
 .products{
-grid-template-columns:1fr;
+grid-template-columns:(2,1fr);
+gap: 12px;
 }
 
 .pinterest-grid{
