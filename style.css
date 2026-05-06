@@ -169,7 +169,7 @@ max-width:1200px;
 margin:auto;
 
 display:flex;
-gap:60px;
+gap:20px;
 align-items:flex-start;
 }
 
@@ -180,7 +180,7 @@ text-align:center;
 
 .main-outfit{
 width:100%;
-max-width:420px;
+max-width:380px;
 
 border-radius:14px;
 
