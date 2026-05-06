@@ -231,22 +231,26 @@ color:white;
 
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:20px;
+gap: 12px;
 }
 
 .product{
 
 background:white;
 
-padding:15px;
+padding:10px;
 
-border-radius:12px;
+border-radius:18px;
 
 color:#111;
 
 box-shadow:0 8px 25px rgba(0,0,0,0.08);
 
 transition:all 0.3s ease;
+
+text-align:center;
+
+text-decoration:none;
 }
 
 .product img{
@@ -256,7 +260,7 @@ height:160px;
 
 object-fit:contain;
 
-border-radius:8px;
+border-radius:14px;
 margin-bottom:10px;
 }
 
@@ -264,13 +268,14 @@ margin-bottom:10px;
 
 font-size:14px;
 font-weight:600;
+cursor:pointer;
 
 background:black;
 color:white;
 
-padding:8px;
-border-radius:6px;
-margin-top:8px;
+padding:12px;
+border-radius:12px;
+margin-top:10px;
 
 text-align:center;
 }
