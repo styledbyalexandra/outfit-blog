@@ -592,7 +592,10 @@ width:100%;
 }
 
 .main-outfit{
-width:100%;
+width:75%;
+max-width:300px;
+display:block;
+margin:0 auto 10px auto;
 }
 }
 
