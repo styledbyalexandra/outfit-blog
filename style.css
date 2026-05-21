@@ -490,7 +490,7 @@ height:55vh;
 }
 
 .hero h1{
-font-size:36px;
+font-size:18px;
 }
 
 .hero-text h1:first-child{
@@ -498,7 +498,7 @@ font-size:18px;
 }
 
 .hero-text h1:last-child{
-font-size:20px;
+font-size:16px;
 }
 
 .hero p{
